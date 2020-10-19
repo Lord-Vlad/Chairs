@@ -17,7 +17,7 @@ execute as @e[type=pig,tag=chair,tag=chairStair] at @s align xyz if entity @p[dx
 
 
 #Save player from suffocation
-execute as @a at @s unless block ~ ~ ~ air align xyz positioned ~.5 ~-2 ~.5 if entity @e[type=minecraft:armor_stand,tag=chair,distance=..1] at @s run tp @s ~ ~.5 ~
+execute as @a at @s unless block ~ ~ ~ air unless block ~ ~-.5 ~ #minecraft:slabs align xyz positioned ~.5 ~-1.5 ~.5 if entity @e[type=minecraft:armor_stand,tag=chair,distance=..1] at @s run tp @s ~ ~.5 ~
 
 
 schedule function chair:main 10t replace
