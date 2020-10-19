@@ -1,0 +1,4 @@
+execute if block ~ ~ ~ #minecraft:stairs[facing=north] align xyz run tp @s ~.5 ~-.39 ~.55 0 0
+execute if block ~ ~ ~ #minecraft:stairs[facing=east] align xyz run tp @s ~.45 ~-.39 ~.5 90 0
+execute if block ~ ~ ~ #minecraft:stairs[facing=south] align xyz run tp @s ~.5 ~-.39 ~.45 180 0
+execute if block ~ ~ ~ #minecraft:stairs[facing=west] align xyz run tp @s ~.55 ~-.39 ~.5 -90 0
