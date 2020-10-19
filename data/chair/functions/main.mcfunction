@@ -16,5 +16,8 @@ execute as @e[type=pig,tag=chair,tag=chairStair] at @s align xyz if entity @p[dx
 #execute as @e[type=pig,tag=chair,tag=chairSlab] at @s align xyz if entity @p[dx=0,dz=0,dy=1] unless entity @p[nbt={RootVehicle:{Entity:{id:"minecraft:pig"}}}] positioned ~ ~1 ~ run function chair:direction
 
 
+#Save player from suffocation
+execute as @a at @s unless block ~ ~ ~ air align xyz positioned ~.5 ~-2 ~.5 if entity @e[type=minecraft:armor_stand,tag=chair,distance=..1] at @s run tp @s ~ ~.5 ~
+
 
 schedule function chair:main 10t replace
